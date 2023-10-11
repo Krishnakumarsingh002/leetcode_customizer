@@ -1,0 +1,124 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.wrapper {
+  max-width: 1000px;
+  min-width: 280px;
+}
+
+.brand {
+  background-color: rgb(40, 42, 46);
+  font-size: 20px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 4px 4px 0px, rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.brand-text {
+  position: absolute;
+  padding-left: 10px;
+}
+
+.options {
+  padding: 10px;
+  background-color: rgb(34, 35, 37);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.option-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.columns {
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.columns legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: rgb(40, 42, 46);
+  padding: 5px 10px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer #fBtn span {
+  text-decoration: underline;
+}
+
+.footer #deBtn {
+  float: right;
+  cursor: pointer;
+}
+
+.details {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(40, 42, 46);
+  padding: 5px 10px;
+  line-height: 15px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 4px 4px 0px, rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.creator {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(40, 42, 46);
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.creator .linkedin {
+  height: 20px;
+  width: 20px;
+  margin-bottom: -5px;
+}
+.slidinggroove:hover{
+  cursor:pointer;
+}
+.slidinggroove{ position: relative; top: 0; right: 0; background: rgba(0,0,0,0.5); border-radius: 20px;
+  bottom: 0; width: 50px; height:20px;
+  transition: all 0.4s ease;
+  }
+  .slidinggroove:after{ position: absolute; content:""; width: 20px; background: rgba(255,255,255,0.6); top: 0px;
+  height: 20px;
+  border-radius: 50%;
+  left: 0px;
+  transition: all 0.4s ease;
+}
+input:checked + .slidinggroove{ background: #5fcf80;
+  transition: all 0.4s ease;
+
+}
+input:checked + .slidinggroove:after{ transform: translateX(30px);
+  transition: all 0.4s ease;
+}
+.labelterm{
+margin-left: 65px;
+font-size: 16px;
+color: #222;
+font-family: 'Roboto', sans-serif;
+}
+input{
+  display: none;
+}
